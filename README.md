@@ -1,6 +1,6 @@
 # WordBank-Codingly 
 
-Workbank is such an importmant tool while taking tests like Toefl and GRE,
+Workbank is such an importmant tool while taking test like Toefl or GRE,
 however, writing a tidy wordbank by hand is so difficult for some people like me. 
 
 Though managing our wordbank in json files sounds a good idea, 
