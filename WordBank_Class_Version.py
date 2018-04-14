@@ -63,6 +63,9 @@ class WordBank():
 
             return self.wordbank
 
+    def show(self):
+        pprint(self.wordbank)
+
 
 
 
