@@ -13,15 +13,17 @@ class WordBank():
     def __init__(self):
         self.wordbank = {}
         
-    def search_dict(self, query):
+    def search_dict(self, query, wordbank=None):
     # A function to find the relative wordbank by a word.
     # However, for basic use, you only need to call the "add_dict" function below.
+        if not wordbank:
+            wordbank = self.wordbank
     
-        for key in self.wordbank:
+        for key in wordbank:
             if key == query:
-                return self.wordbank[key]
+                return wordbank[key]
             else:
-                search_dict(self.wordbank[key], query) 
+                search_dict(query, self.wordbank[key]) 
 
     def add_dict(self, new_keyword, target_keyword=""):
     # Add new keywords below another keyword that already exists.
@@ -30,7 +32,7 @@ class WordBank():
             self.wordbank[new_keyword] = {}
        
         else:
-            target_dict = search_dict(self.wordbank, target_keyword)
+            target_dict = self.search_dict(target_keyword)
             target_dict[new_keyword] = {}
     
         return self.wordbank
@@ -60,8 +62,6 @@ class WordBank():
             pprint(self.wordbank)
 
             return self.wordbank
-
-
 
 
 
