@@ -23,7 +23,7 @@ class WordBank():
             if key == query:
                 return wordbank[key]
             else:
-                search_dict(query, self.wordbank[key]) 
+                search_dict(query, wordbank[key]) 
 
     def add_dict(self, new_keyword, target_keyword=""):
     # Add new keywords below another keyword that already exists.
