@@ -62,42 +62,8 @@ class WordBank():
             return self.wordbank
 
 
-# In[70]:
-
-wordbank = WordBank()
 
 
-# In[71]:
-
-wordbank.add_dict("You")
-
-
-# In[72]:
-
-wordbank.add_dict("Care $", "You")
-
-
-# In[73]:
-
-print wordbank.search_dict("You")
-
-
-# In[74]:
-
-wordbank.save_wordbank()
-
-
-# In[75]:
-
-wordbank.load_wordbank()
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
 
 
 
